@@ -12,10 +12,11 @@ build:
 # initialize west
 init:
     west init -l config
-    west update --fetch-opt=--filter=blob:none
+    west update
+    # west update --fetch-opt=--filter=blob:none
     west zephyr-export
 
 # update west
 update:
-    west update --fetch-opt=--filter=blob:none
+    west update
 
